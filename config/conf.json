@@ -1,0 +1,8 @@
+{
+    "version": "0.0.1.0",
+    "private_key": "18366665a92ec88e3f1d765713fb6c23177f6efd4b226200cb84c1f216f2646f",
+    "parent_address": "0x3a24f5f813cba9ac7c6eb8a416b25cf5c6458e32",
+    "dns_link": "http://35.185.166.168:7500/api/dns/connection-address/",
+    "parent_connection_address": "node",
+    "parent_connection_type": "node"
+}

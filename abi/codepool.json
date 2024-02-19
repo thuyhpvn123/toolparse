@@ -1,0 +1,1257 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "activator",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "codeStr",
+				"type": "string"
+			}
+		],
+		"name": "activateCode",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "codeHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "activeTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expirationActiveTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostSpeed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rateBoost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "delegate",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "origin",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mintedAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "releasePercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "keyHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentDeposit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastestClaim",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Code",
+				"name": "code",
+				"type": "tuple"
+			}
+		],
+		"name": "addCode",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "codeHashes",
+				"type": "bytes32[]"
+			}
+		],
+		"name": "blockCode",
+		"outputs": [
+			{
+				"internalType": "bool[]",
+				"name": "",
+				"type": "bool[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "codeHashes",
+				"type": "bytes32[]"
+			}
+		],
+		"name": "blockCodeSupportingFee",
+		"outputs": [
+			{
+				"internalType": "bool[]",
+				"name": "",
+				"type": "bool[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "burnCode",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "grantRole",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_codeHash",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_activeTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expirationActiveTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_boostSpeed",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_boostTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_rateBoost",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint8",
+				"name": "_status",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_mintedAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_delegate",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_origin",
+				"type": "string"
+			}
+		],
+		"name": "migrateCodeWallet",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_codeHash",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_lockTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_releasePercentage",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_keyHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_currentDeposit",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_lastestClaim",
+				"type": "uint256"
+			}
+		],
+		"name": "migrateLockCodeWallet",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "renounceRole",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "revokeRole",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "payable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "previousAdminRole",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "newAdminRole",
+				"type": "bytes32"
+			}
+		],
+		"name": "RoleAdminChanged",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			}
+		],
+		"name": "RoleGranted",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			}
+		],
+		"name": "RoleRevoked",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "newLockTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lockRate",
+				"type": "uint256"
+			}
+		],
+		"name": "setCodeLockTime",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "newLockTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lockRate",
+				"type": "uint256"
+			}
+		],
+		"name": "setCodeLockTimeSupportingFee",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_codeStorage",
+				"type": "address"
+			}
+		],
+		"name": "setCodeStorage",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_newMining",
+				"type": "address"
+			}
+		],
+		"name": "setMining",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_newReturnRIP",
+				"type": "uint256"
+			}
+		],
+		"name": "setReturnRIP",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "codeHashes",
+				"type": "bytes32[]"
+			}
+		],
+		"name": "unblockCode",
+		"outputs": [
+			{
+				"internalType": "bool[]",
+				"name": "",
+				"type": "bool[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32[]",
+				"name": "codeHashes",
+				"type": "bytes32[]"
+			}
+		],
+		"name": "unblockCodeSupportingFee",
+		"outputs": [
+			{
+				"internalType": "bool[]",
+				"name": "",
+				"type": "bool[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "rawKey",
+				"type": "string"
+			}
+		],
+		"name": "unlockCodeWalletKey",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "rawKey",
+				"type": "string"
+			}
+		],
+		"name": "unlockCodeWalletKeySupportingFee",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "codeHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "activeTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expirationActiveTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostSpeed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rateBoost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "delegate",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "origin",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mintedAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "releasePercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "keyHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentDeposit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastestClaim",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Code",
+				"name": "updatedCode",
+				"type": "tuple"
+			}
+		],
+		"name": "updateCode",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "rawKey",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "newKeyHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "updateCodeWalletKey",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "rawKey",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "newKeyHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "updateCodeWalletKeySupportingFee",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "updateExpiredCode",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "codeStorage",
+		"outputs": [
+			{
+				"internalType": "contract ICodeStorage",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "DEFAULT_ADMIN_ROLE",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "codeHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "getCodeInfo",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "codeHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "activeTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expirationActiveTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostSpeed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rateBoost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "delegate",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "origin",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mintedAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "releasePercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "keyHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentDeposit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastestClaim",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Code",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			}
+		],
+		"name": "getCodeList",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "codeHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "activeTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expirationActiveTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostSpeed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rateBoost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "delegate",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "origin",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mintedAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "releasePercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "keyHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentDeposit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastestClaim",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Code[]",
+				"name": "codes",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "page",
+				"type": "uint256"
+			}
+		],
+		"name": "getCodeListPagination",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "isMore",
+				"type": "bool"
+			},
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "codeHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "activeTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expirationActiveTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostSpeed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "boostTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rateBoost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "delegate",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "origin",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mintedAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "releasePercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "keyHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentDeposit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastestClaim",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Code[]",
+				"name": "codes",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			}
+		],
+		"name": "getRoleAdmin",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "role",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "hasRole",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "mining",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "PC_CON",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "returnRIP",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes4",
+				"name": "interfaceId",
+				"type": "bytes4"
+			}
+		],
+		"name": "supportsInterface",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

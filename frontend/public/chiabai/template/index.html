@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN qrcodejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+    <h2>TEST </h2>
+    <div class="container bg-light ">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">     
+
+                <br>
+                <button type="click" id="call" class="btn btn-primary m-t-20" >
+                    call One to One
+                </button>
+                <br>
+                <br>
+                <button type="click" id="viewtreeMatrix" class="btn btn-primary m-t-20" >
+                    View tree matrix
+                </button>
+
+                <br>
+                <br>
+                <button type="click" id="getCodeList" class="btn btn-primary m-t-20" >
+                    Get Code List
+                </button>
+
+                <br>
+                <br>
+                <button type="click" id="GetUserInfo" class="btn btn-primary m-t-20" >
+                    Get User Info
+                </button>
+
+                <br>
+                <div>
+                    <form id="connectAWallet">
+                        <div class="form-group">
+                        <label for="address">Address</label>
+                        <input id="address" type="text" class="form-control" value="97126B71376F7e55fBA904FdaA9dF0dBd396612f"></input>
+                        <label for="privateKey">Private Key</label>
+                        <input id="privateKey" type="text" class="form-control" value="2b3aa0f620d2d73c046cd93eb64f2eb687a95b22e278500aa251c8c9dda1203b"></input>
+
+                        <span class="error error_getKey"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary m-t-20" >
+                            Connect A Wallet
+                        </button>
+                    </form>
+                </div>
+
+                <div id="log-container">
+                    <h4>Log:</h5>
+                        <pre id="log-content"></pre>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <script type="application/javascript" src="../frontend/js/Websocket.js"></script>
+</body>
+</html>
